@@ -10,23 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Macondo&family=Playwrite+VN:wght@100..400&family=Satisfy&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Ai Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <div class="top">
-          <img
-            src="img/undraw_with-love_tzef.png"
-            target="_blank"
-            alt="logo-picture"
-            class="logo-picture"
-          />
-          <h1>Affirmation generator</h1>
-        </div>
+        <h1>Affirmation generator</h1>
       </header>
       <main>
-        <form>
+        <form id="generator">
           <input
             type="text"
             placeholder="Enter something..."
@@ -40,9 +33,8 @@
         <div class="examples-search">
           i.e. Hope, stress, anxiety, love, etc.
         </div>
-        <div class="generator-answer-text">The generator answer here</div>
+        <div class="generator-answer-text" id="affirmation"></div>
       </main>
-
       <footer>
         This project was coded by
         <a href="https://github.com/stineb89" target="_blank">Stine Berg</a> and
@@ -53,7 +45,7 @@
           >open-sourced on Github</a
         >
         and hosted on
-        <a href="https://stirring-sundae-a98c9f.netlify.app/" target="_blank"
+        <a href="https://stirringgenerator11.netlify.app/" target="_blank"
           >netlify</a
         >
       </footer>
