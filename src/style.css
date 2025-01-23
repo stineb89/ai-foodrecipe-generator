@@ -1,5 +1,5 @@
 body {
-  background: rgb(253, 229, 233);
+  background: white;
 }
 h1 {
   font-family: "Macondo", serif;
@@ -8,26 +8,15 @@ h1 {
   font-size: 38px;
   color: rgb(157, 93, 130);
   line-height: 1.5;
-  margin-left: 5%;
-}
-.logo-picture {
-  width: 150px;
-  height: 150px;
-}
-.top {
-  display: flex;
 }
 header {
   margin: 30px;
 }
 .container {
   max-width: 600px;
-  background: white;
   display: block;
-  margin: 150px auto;
+  margin: 90px auto;
   padding: 15px;
-  border-radius: 5px;
-  box-shadow: 7px 2px 20px rgb(143, 143, 143);
 }
 form {
   padding: 40px 50px;
@@ -48,7 +37,7 @@ form {
   padding: 5px;
 }
 footer {
-  margin: 30px 40px;
+  margin: 0px 40px;
   border-top: 1px solid rgb(220, 176, 201);
   text-align: center;
   color: rgb(67, 59, 64);
@@ -62,7 +51,7 @@ a:hover {
   color: rgb(138, 84, 115);
 }
 .textbox {
-  font-size: 18px;
+  font-size: 15px;
   padding: 15px;
   border-radius: 50px;
   border: none;
@@ -75,7 +64,7 @@ a:hover {
   border-radius: 20px;
   border: none;
   margin: 0 0 0 5px;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   box-shadow: 2px 5px 15px rgb(169, 168, 168);
 }
