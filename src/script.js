@@ -1,4 +1,4 @@
-function affirmationGenerator(event) {
+function recipeGenerator(event) {
   event.preventDefault();
 
   let instructionsInput = document.querySelector("#instructions");
@@ -11,15 +11,15 @@ function affirmationGenerator(event) {
   console.log(`Prompt: ${prompt}`);
   console.log(`Prompt: ${context}`);
   console.log(`Generating...`);
-  affirmation.innerHTML = `<span class="affirmationjs">⚙️</span><em>Generating your recipe..</em>`;
-  axios.get(apiUrl).then(displayAffirmation);
+  recipe.innerHTML = `<span class="recipejs">⚙️</span><em>Generating your recipe..</em>`;
+  axios.get(apiUrl).then(displayRecipe);
 }
 
-let affirmationForm = document.querySelector("#generator");
-affirmationForm.addEventListener("submit", affirmationGenerator);
+let recipeForm = document.querySelector("#generator");
+recipeForm.addEventListener("submit", recipeGenerator);
 
-function displayAffirmation(response) {
-  new Typewriter("#affirmation", {
+function displayRecipe(response) {
+  new Typewriter("#recipe", {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
