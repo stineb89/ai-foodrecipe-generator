@@ -4,7 +4,7 @@ function recipeGenerator(event) {
   let instructionsInput = document.querySelector("#instructions");
 
   let apiKey = `5e64c3tb70d2afbdd0ba0e314o875a8e`;
-  let context = `Please write different food recipe in advanced html. Never same. Only vegetarian food. Sign with Vegetarian food recipe generator at the end in <strong></strong> element. Do not include html at the beginning. Write headings as h2 in center and with font Macondo and font-size 30px.`;
+  let context = `Please write different food recipe in advanced html. Not same recipe as before. Always new one. Only vegetarian food. Sign with Vegetarian food recipe generator at the end in <strong></strong> element. Do not include html at the beginning. Write headings as h2 in center and with font Macondo and font-size 30px.`;
   let prompt = `Generate a recipe about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
