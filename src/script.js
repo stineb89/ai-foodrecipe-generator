@@ -4,14 +4,13 @@ function recipeGenerator(event) {
   let instructionsInput = document.querySelector("#instructions");
 
   let apiKey = `5e64c3tb70d2afbdd0ba0e314o875a8e`;
-  let context = `Please write food recipe in advanced html. Never same one as before. Always new one. Only vegetarian food. Sign with Vegetarian food recipe generator at the end in <strong></strong> element. Do not include html at det beginning.`;
-  let prompt = `Generate an recipe about ${instructionsInput.value}`;
+  let context = `Please write different food recipe in advanced html. Never same. Only vegetarian food. Sign with Vegetarian food recipe generator at the end in <strong></strong> element. Do not include html at the beginning. Write headings as h2 in center and with font Macondo and font-size 30px.`;
+  let prompt = `Generate a recipe about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Prompt: ${context}`);
-  console.log(`Generating...`);
-  recipe.innerHTML = `<span class="recipejs">⚙️</span><em>Generating your recipe..</em>`;
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipe.innerHTML = `<div class="user-inter"><span class="recipejs blink">⚙️</span><em>Generating a recipe about <strong class="user">${instructionsInput.value}</strong></em></div>`;
   axios.get(apiUrl).then(displayRecipe);
 }
 
