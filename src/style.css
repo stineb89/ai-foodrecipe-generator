@@ -51,11 +51,11 @@ footer {
   font-family: verdana;
 }
 a {
-  color: rgb(106, 106, 106);
+  color: rgb(157, 93, 130);
   text-decoration: none;
 }
 a:hover {
-  color: rgb(146, 146, 146);
+  color: rgb(184, 137, 165);
 }
 .textbox {
   font-size: 15px;
@@ -104,12 +104,12 @@ a:hover {
   font-size: 33px;
 }
 .blink {
-  animation: blink-animation 1s steps(2, start) infinite;
-  -webkit-animation: blink-animation 1s steps(2, start) infinite;
+  animation: blink-animation 1s steps(3, start) infinite;
+  -webkit-animation: blink-animation 1s steps(3, start) infinite;
 }
 @keyframes blink-animation {
-  to {
-    visibility: hidden;
+  60% {
+    opacity: 0;
   }
 }
 @-webkit-keyframes blink-animation {
